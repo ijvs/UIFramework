@@ -113,10 +113,18 @@
 			children = (
 				773D65112183D0F100229F7F /* UIFramework.h */,
 				773D65122183D0F100229F7F /* Info.plist */,
+				77E59FB6218637010097E1C6 /* Utils */,
+			);
+			path = UIFramework;
+			sourceTree = "<group>";
+		};
+		77E59FB6218637010097E1C6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
 				773D651C2183D26800229F7F /* NibDesignable.swift */,
 				77E59FAD218635BD0097E1C6 /* ComponentTableViewCell.swift */,
 			);
-			path = UIFramework;
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
