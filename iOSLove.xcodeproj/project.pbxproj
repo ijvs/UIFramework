@@ -18,6 +18,7 @@
 		773D651D2183D26800229F7F /* NibDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773D651C2183D26800229F7F /* NibDesignable.swift */; };
 		77E59FAE218635BD0097E1C6 /* ComponentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E59FAD218635BD0097E1C6 /* ComponentTableViewCell.swift */; };
 		77E59FBD218637FA0097E1C6 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E59FBC218637FA0097E1C6 /* ShadowView.swift */; };
+		77E59FBF2186387E0097E1C6 /* ILAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77E59FBE2186387E0097E1C6 /* ILAssets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		773D651C2183D26800229F7F /* NibDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibDesignable.swift; sourceTree = "<group>"; };
 		77E59FAD218635BD0097E1C6 /* ComponentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentTableViewCell.swift; sourceTree = "<group>"; };
 		77E59FBC218637FA0097E1C6 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		77E59FBE2186387E0097E1C6 /* ILAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ILAssets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			children = (
 				773D65112183D0F100229F7F /* UIFramework.h */,
 				773D65122183D0F100229F7F /* Info.plist */,
+				77E59FBE2186387E0097E1C6 /* ILAssets.xcassets */,
 				77E59FB6218637010097E1C6 /* Utils */,
 			);
 			path = UIFramework;
@@ -234,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77E59FBF2186387E0097E1C6 /* ILAssets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
