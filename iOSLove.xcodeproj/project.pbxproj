@@ -16,6 +16,7 @@
 		773D65162183D0F100229F7F /* UIFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 773D650F2183D0F100229F7F /* UIFramework.framework */; };
 		773D65172183D0F100229F7F /* UIFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 773D650F2183D0F100229F7F /* UIFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		773D651D2183D26800229F7F /* NibDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773D651C2183D26800229F7F /* NibDesignable.swift */; };
+		77E59FAE218635BD0097E1C6 /* ComponentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E59FAD218635BD0097E1C6 /* ComponentTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		773D65112183D0F100229F7F /* UIFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIFramework.h; sourceTree = "<group>"; };
 		773D65122183D0F100229F7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		773D651C2183D26800229F7F /* NibDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibDesignable.swift; sourceTree = "<group>"; };
+		77E59FAD218635BD0097E1C6 /* ComponentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				773D65112183D0F100229F7F /* UIFramework.h */,
 				773D65122183D0F100229F7F /* Info.plist */,
 				773D651C2183D26800229F7F /* NibDesignable.swift */,
+				77E59FAD218635BD0097E1C6 /* ComponentTableViewCell.swift */,
 			);
 			path = UIFramework;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				773D651D2183D26800229F7F /* NibDesignable.swift in Sources */,
+				77E59FAE218635BD0097E1C6 /* ComponentTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
