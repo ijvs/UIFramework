@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2f8-qG-z0r" customClass="ILTitleCardView" customModule="UIFramework">
+                    <rect key="frame" x="34" y="40" width="307" height="80"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="eQb-yo-yBN"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="TOTAL A RECARGAR"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="valueText" value="$0.00"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="showAccesory" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Prt-ik-lMj" customClass="ILHorizontalPickerView" customModule="UIFramework">
+                    <rect key="frame" x="34" y="130" width="307" height="70"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="9ZX-Qm-7A1"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Monto de Recarga"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="mainColor">
+                            <color key="value" name="mainColor"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sGG-0n-el0" customClass="ILPaymentMethodView" customModule="UIFramework">
+                    <rect key="frame" x="34" y="220" width="307" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="SW9-6O-Zvk"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S2T-QG-0Mg" customClass="ILPaymentMethodView" customModule="UIFramework">
+                    <rect key="frame" x="34" y="300" width="307" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="8BV-Na-Y9M"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6iq-BZ-7x8" customClass="ILPaymentMethodView" customModule="UIFramework">
+                    <rect key="frame" x="34" y="380" width="307" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="eVG-i1-bov"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wzi-cI-Cjl" customClass="ILPaymentMethodView" customModule="UIFramework">
+                    <rect key="frame" x="34" y="460" width="307" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="41v-W7-ukz"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gm1-57-4u6" customClass="ILPaymentMethodView" customModule="UIFramework">
+                    <rect key="frame" x="34" y="540" width="307" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="7qq-aH-fxU"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SCu-My-Qaf" customClass="ShadowView" customModule="UIFramework">
+                    <rect key="frame" x="0.0" y="587" width="375" height="80"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sg4-ef-qyL">
+                            <rect key="frame" x="40" y="20" width="295" height="40"/>
+                            <color key="backgroundColor" name="mainColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="XqH-SR-50J"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                            <state key="normal" title="Recargar">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Sg4-ef-qyL" firstAttribute="centerY" secondItem="SCu-My-Qaf" secondAttribute="centerY" id="2Rv-lh-WiT"/>
+                        <constraint firstAttribute="trailing" secondItem="Sg4-ef-qyL" secondAttribute="trailing" constant="40" id="MJ3-mR-QNL"/>
+                        <constraint firstAttribute="height" constant="80" id="U3q-MV-yVT"/>
+                        <constraint firstItem="Sg4-ef-qyL" firstAttribute="leading" secondItem="SCu-My-Qaf" secondAttribute="leading" constant="40" id="ofH-Nt-kYR"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                            <size key="value" width="3" height="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="wzi-cI-Cjl" secondAttribute="trailing" constant="34" id="1d2-Ld-FIh"/>
+                <constraint firstItem="wzi-cI-Cjl" firstAttribute="top" secondItem="6iq-BZ-7x8" secondAttribute="bottom" constant="20" id="4qc-SG-2nj"/>
+                <constraint firstItem="Prt-ik-lMj" firstAttribute="top" secondItem="2f8-qG-z0r" secondAttribute="bottom" constant="10" id="6mJ-LR-Mie"/>
+                <constraint firstItem="wzi-cI-Cjl" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="34" id="9JI-UR-bwy"/>
+                <constraint firstItem="S2T-QG-0Mg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="34" id="Mwr-TW-kim"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Prt-ik-lMj" secondAttribute="trailing" constant="34" id="QjN-xl-v2g"/>
+                <constraint firstItem="sGG-0n-el0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="34" id="TwS-f3-ZEl"/>
+                <constraint firstItem="Gm1-57-4u6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="34" id="UUv-Bu-vy8"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="sGG-0n-el0" secondAttribute="trailing" constant="34" id="WNA-3X-bXd"/>
+                <constraint firstItem="6iq-BZ-7x8" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="34" id="WXs-Rl-2gO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="6iq-BZ-7x8" secondAttribute="trailing" constant="34" id="WZs-BA-Nve"/>
+                <constraint firstItem="S2T-QG-0Mg" firstAttribute="top" secondItem="sGG-0n-el0" secondAttribute="bottom" constant="20" id="ZDA-Uh-3A5"/>
+                <constraint firstItem="SCu-My-Qaf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ZEJ-eh-cce"/>
+                <constraint firstAttribute="bottom" secondItem="SCu-My-Qaf" secondAttribute="bottom" id="bmB-H9-dlu"/>
+                <constraint firstItem="Prt-ik-lMj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="34" id="cdE-iD-v1l"/>
+                <constraint firstItem="2f8-qG-z0r" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="34" id="eka-th-9dR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="S2T-QG-0Mg" secondAttribute="trailing" constant="34" id="gHx-p8-yh3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="2f8-qG-z0r" secondAttribute="trailing" constant="34" id="gPw-J3-4y1"/>
+                <constraint firstItem="sGG-0n-el0" firstAttribute="top" secondItem="Prt-ik-lMj" secondAttribute="bottom" constant="20" id="gnd-Ls-Y9I"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Gm1-57-4u6" secondAttribute="trailing" constant="34" id="kDv-iB-4K6"/>
+                <constraint firstItem="6iq-BZ-7x8" firstAttribute="top" secondItem="S2T-QG-0Mg" secondAttribute="bottom" constant="20" id="oAs-vd-DxP"/>
+                <constraint firstItem="SCu-My-Qaf" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="rWP-Vy-KMD"/>
+                <constraint firstItem="2f8-qG-z0r" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="sRD-Oo-rT8"/>
+                <constraint firstItem="Gm1-57-4u6" firstAttribute="top" secondItem="wzi-cI-Cjl" secondAttribute="bottom" constant="20" id="z9e-VU-Ooh"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="53.600000000000001" y="48.125937031484263"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="mainColor">
+            <color red="0.65490196078431373" green="0.18823529411764706" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

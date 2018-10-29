@@ -8,11 +8,25 @@
 
 import UIKit
 
-public protocol ILPaymentMethodModel {
-    var style: PaymentMethodStyle { get set }
-    var brand: String { get set }
-    var cardNumber: String { get set }
-    var accessoryButtonImage: UIImage? { get set }
+//public protocol ILPaymentMethodModel {
+//    var style: PaymentMethodStyle { get set }
+//    var brand: String { get set }
+//    var cardNumber: String { get set }
+//    var accessoryButtonImage: UIImage? { get set }
+//}
+
+public struct ILPaymentMethodModel {
+    var style: PaymentMethodStyle
+    var brand: String
+    var cardNumber: String
+    var accessoryButtonImage: UIImage?
+    
+    public init(style: PaymentMethodStyle, brand: String, cardNumber: String, accessoryButtonImage: UIImage? = nil){
+        self.style = style
+        self.brand = brand
+        self.cardNumber = cardNumber
+        self.accessoryButtonImage = accessoryButtonImage
+    }
 }
 
 public protocol ILPaymentMethodViewDelegate: class {
@@ -43,6 +57,12 @@ public class ILPaymentMethodView: NibDesignable {
     public override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
         setup()
+        
+        #if TARGET_INTERFACE_BUILDER
+            let mockModel = ILPaymentMethodModel(style: PaymentMethodStyle.oceanBlue, brand: "amex", cardNumber: "•••• •••• •••• 1234")
+            configure(mockModel)
+        #endif
+
     }
     
     private func setup() {
@@ -51,11 +71,11 @@ public class ILPaymentMethodView: NibDesignable {
         self.layer.cornerRadius = 10
         accessoryButton.addTarget(self, action: #selector(didTapAccessoryButton), for: .touchUpInside)
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(didTapView))
-        self.addGestureRecognizer(tapGesture)
+        self.addGestureRecognizer(tapGesture)        
     }
     
     public func configure(_ model: ILPaymentMethodModel) {
-        brandImageView.image = UIImage(named: model.brand)
+        brandImageView.image = UIImage(named: model.brand, in: Bundle(identifier: "space.siker.UIFramework"), compatibleWith: nil)
         cardNumberLabel.text = model.cardNumber
         backgroundImageView.image = model.style.gradient
         cardNumberLabel.textColor = model.style.tintColor

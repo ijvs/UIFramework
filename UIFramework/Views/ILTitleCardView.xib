@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ILTitleCardView" customModule="UIFramework" customModuleProvider="target">
             <connections>
+                <outlet property="accesoryButton" destination="QF5-H8-Ohq" id="FcN-Pb-yYe"/>
                 <outlet property="titleLabel" destination="md0-tc-Mnx" id="gQA-Jh-eaW"/>
                 <outlet property="valueLabel" destination="3BN-Rw-gOs" id="XAH-4J-B7m"/>
             </connections>

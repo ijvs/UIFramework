@@ -14,13 +14,13 @@ public class ILHorizontalPickerView: NibDesignable {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
     
-    @IBInspectable var title: String = "Title" {
+    @IBInspectable public var title: String = "Title" {
         didSet {
             titleLabel.text = title
         }
     }
     
-    @IBInspectable var mainColor: UIColor = UIColor.black 
+    @IBInspectable public var mainColor: UIColor = UIColor.black
     
     var optionButtons: [ILOptionButton] = []
     var selectedOption: String?
@@ -36,7 +36,7 @@ public class ILHorizontalPickerView: NibDesignable {
     
     public func config(withOptions options: [String]) {
         optionButtons = options.enumerated().map { (index, title) -> ILOptionButton in
-            let button = ILOptionButton(frame: CGRect.init(x: (index * 60) , y: 0, width: 50, height: 25))
+            let button = ILOptionButton(frame: CGRect.init(x: (index * 90) , y: 0, width: 80, height: 25))
             button.mainColor = mainColor
             button.title = title
             button.delegate = self
@@ -46,7 +46,7 @@ public class ILHorizontalPickerView: NibDesignable {
         optionButtons.forEach { (button) in
             scrollView.addSubview(button)
         }
-        scrollView.contentSize = CGSize(width: optionButtons.count * 60, height: 25)
+        scrollView.contentSize = CGSize(width: optionButtons.count * 90, height: 25)
     }
     
 }

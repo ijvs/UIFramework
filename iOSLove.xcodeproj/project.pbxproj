@@ -16,7 +16,11 @@
 		773D65162183D0F100229F7F /* UIFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 773D650F2183D0F100229F7F /* UIFramework.framework */; };
 		773D65172183D0F100229F7F /* UIFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 773D650F2183D0F100229F7F /* UIFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		773D651D2183D26800229F7F /* NibDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773D651C2183D26800229F7F /* NibDesignable.swift */; };
-		77C1AA432186780300434938 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77C1AA422186780300434938 /* View.xib */; };
+		77C1AA45218691EE00434938 /* StaticViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77C1AA44218691EE00434938 /* StaticViewController.xib */; };
+		77C1AA4C2186A40B00434938 /* PaymentMethodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C1AA4A2186A40B00434938 /* PaymentMethodCell.swift */; };
+		77C1AA4D2186A40B00434938 /* PaymentMethodCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77C1AA4B2186A40B00434938 /* PaymentMethodCell.xib */; };
+		77C1AA532186A5D300434938 /* TitleCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C1AA512186A5D300434938 /* TitleCardCell.swift */; };
+		77C1AA542186A5D300434938 /* TitleCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77C1AA522186A5D300434938 /* TitleCardCell.xib */; };
 		77E59FAE218635BD0097E1C6 /* ComponentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E59FAD218635BD0097E1C6 /* ComponentTableViewCell.swift */; };
 		77E59FB92186377B0097E1C6 /* ILPaymentMethodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E59FB82186377B0097E1C6 /* ILPaymentMethodView.swift */; };
 		77E59FBB218637870097E1C6 /* ILPaymentMethodView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77E59FBA218637870097E1C6 /* ILPaymentMethodView.xib */; };
@@ -67,7 +71,11 @@
 		773D65112183D0F100229F7F /* UIFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIFramework.h; sourceTree = "<group>"; };
 		773D65122183D0F100229F7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		773D651C2183D26800229F7F /* NibDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibDesignable.swift; sourceTree = "<group>"; };
-		77C1AA422186780300434938 /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		77C1AA44218691EE00434938 /* StaticViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StaticViewController.xib; sourceTree = "<group>"; };
+		77C1AA4A2186A40B00434938 /* PaymentMethodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodCell.swift; sourceTree = "<group>"; };
+		77C1AA4B2186A40B00434938 /* PaymentMethodCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentMethodCell.xib; sourceTree = "<group>"; };
+		77C1AA512186A5D300434938 /* TitleCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCardCell.swift; sourceTree = "<group>"; };
+		77C1AA522186A5D300434938 /* TitleCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleCardCell.xib; sourceTree = "<group>"; };
 		77E59FAD218635BD0097E1C6 /* ComponentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentTableViewCell.swift; sourceTree = "<group>"; };
 		77E59FB82186377B0097E1C6 /* ILPaymentMethodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ILPaymentMethodView.swift; sourceTree = "<group>"; };
 		77E59FBA218637870097E1C6 /* ILPaymentMethodView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ILPaymentMethodView.xib; sourceTree = "<group>"; };
@@ -124,8 +132,9 @@
 			children = (
 				773D64F82183B5B900229F7F /* AppDelegate.swift */,
 				773D64FA2183B5B900229F7F /* ViewController.swift */,
-				77C1AA422186780300434938 /* View.xib */,
 				773D64FC2183B5B900229F7F /* Main.storyboard */,
+				77C1AA44218691EE00434938 /* StaticViewController.xib */,
+				77C1AA4E2186A59C00434938 /* Cells */,
 				773D64FF2183B5BA00229F7F /* Assets.xcassets */,
 				773D65012183B5BA00229F7F /* LaunchScreen.storyboard */,
 				773D65042183B5BA00229F7F /* Info.plist */,
@@ -144,6 +153,17 @@
 				77E59FB6218637010097E1C6 /* Utils */,
 			);
 			path = UIFramework;
+			sourceTree = "<group>";
+		};
+		77C1AA4E2186A59C00434938 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				77C1AA4A2186A40B00434938 /* PaymentMethodCell.swift */,
+				77C1AA4B2186A40B00434938 /* PaymentMethodCell.xib */,
+				77C1AA512186A5D300434938 /* TitleCardCell.swift */,
+				77C1AA522186A5D300434938 /* TitleCardCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		77E59FB6218637010097E1C6 /* Utils */ = {
@@ -273,9 +293,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77C1AA432186780300434938 /* View.xib in Resources */,
+				77C1AA542186A5D300434938 /* TitleCardCell.xib in Resources */,
+				77C1AA45218691EE00434938 /* StaticViewController.xib in Resources */,
 				773D65032183B5BA00229F7F /* LaunchScreen.storyboard in Resources */,
 				773D65002183B5BA00229F7F /* Assets.xcassets in Resources */,
+				77C1AA4D2186A40B00434938 /* PaymentMethodCell.xib in Resources */,
 				773D64FE2183B5B900229F7F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,7 +321,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77C1AA4C2186A40B00434938 /* PaymentMethodCell.swift in Sources */,
 				773D64FB2183B5B900229F7F /* ViewController.swift in Sources */,
+				77C1AA532186A5D300434938 /* TitleCardCell.swift in Sources */,
 				773D64F92183B5B900229F7F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

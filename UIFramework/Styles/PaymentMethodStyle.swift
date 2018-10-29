@@ -20,28 +20,28 @@ public enum PaymentMethodStyle {
     public var gradient: UIImage? {
         switch self {
         case .skyBlue:
-            return UIImage(named: "skyBlueGradient")
+            return UIImage(named: "skyBlueGradient", in: Bundle(identifier: "space.siker.UIFramework"), compatibleWith: nil)
         case .oceanBlue:
-            return UIImage(named: "oceanBlueGradient")
+            return UIImage(named: "oceanBlueGradient", in: Bundle(identifier: "space.siker.UIFramework"), compatibleWith: nil)
         case .lemonGreen:
-            return UIImage(named: "lemonGreenGradient")
+            return UIImage(named: "lemonGreenGradient", in: Bundle(identifier: "space.siker.UIFramework"), compatibleWith: nil)
         case .red:
-            return UIImage(named: "redGradient")
+            return UIImage(named: "redGradient", in: Bundle(identifier: "space.siker.UIFramework"), compatibleWith: nil)
         case .yellow:
-            return UIImage(named: "yellowGradient")
+            return UIImage(named: "yellowGradient", in: Bundle(identifier: "space.siker.UIFramework"), compatibleWith: nil)
         case .purple:
-            return UIImage(named: "purpleGradient")
+            return UIImage(named: "purpleGradient", in: Bundle(identifier: "space.siker.UIFramework"), compatibleWith: nil)
         case .gray:
-            return UIImage(named: "grayGradient")
+            return UIImage(named: "grayGradient", in: Bundle(identifier: "space.siker.UIFramework"), compatibleWith: nil)
         }
     }
     
     public var tintColor: UIColor {
         switch self {
         case .skyBlue, .oceanBlue, .lemonGreen, .red, .yellow, .purple:
-            return UIColor(named: "white") ?? .white
+            return UIColor.white
         case .gray:
-            return UIColor(named: "dark") ?? .black
+            return UIColor.black
         }
     }
 }

@@ -13,7 +13,19 @@ public class ILTitleCardView: NibDesignable {
     
     @IBOutlet weak public var titleLabel: UILabel!
     @IBOutlet weak public var valueLabel: UILabel!
+    @IBOutlet weak var accesoryButton: UIButton!
     
+    @IBInspectable public var showAccesory: Bool = true {
+        didSet{
+            accesoryButton.isHidden = !showAccesory
+        }
+    }
+    
+    @IBInspectable public var accessoryImage: UIImage? {
+        didSet{
+            accesoryButton.setImage(accessoryImage, for: .normal)
+        }
+    }
     
     @IBInspectable var title: String = "Title" {
         didSet{
