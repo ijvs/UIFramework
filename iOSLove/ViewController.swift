@@ -40,7 +40,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: "ILHorizontalPickerView") as! ComponentTableViewCell<ILHorizontalPickerView>
             cell.uiClass?.title = "Monto de Recarga"
-            cell.uiClass?.mainColor = UIColor(named: "mainColor")!
+            cell.uiClass?.mainColor = UIColor(named: "mainColor", in: Bundle(identifier: "space.siker.UIFramework"), compatibleWith: nil)!
             cell.uiClass?.config(withOptions: ["$100.00", "$200.00", "$300.00", "$400.00", "$500.00"])
             return cell
         case 1...5:
