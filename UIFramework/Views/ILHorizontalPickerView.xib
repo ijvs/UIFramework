@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ILHorizontalPickerView" customModule="UIFramework" customModuleProvider="target">
+            <connections>
+                <outlet property="scrollView" destination="ypi-ZJ-2y0" id="lsB-vF-kh4"/>
+                <outlet property="titleLabel" destination="wDL-yZ-Hld" id="Vvi-85-TKD"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="423" height="77"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wDL-yZ-Hld">
+                    <rect key="frame" x="0.0" y="10" width="20" height="12"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="10"/>
+                    <color key="textColor" name="darkColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypi-ZJ-2y0">
+                    <rect key="frame" x="0.0" y="32" width="423" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="3Mq-ZH-qP3"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="wDL-yZ-Hld" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="1hS-H3-VQt"/>
+                <constraint firstItem="ypi-ZJ-2y0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="9XN-Mi-Cua"/>
+                <constraint firstItem="wDL-yZ-Hld" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="9j2-w1-ixt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ypi-ZJ-2y0" secondAttribute="bottom" constant="10" id="VJQ-we-nd2"/>
+                <constraint firstItem="ypi-ZJ-2y0" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="WYQ-3k-kvB"/>
+                <constraint firstItem="ypi-ZJ-2y0" firstAttribute="top" secondItem="wDL-yZ-Hld" secondAttribute="bottom" constant="10" id="fhf-sA-pJe"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-34.399999999999999" y="-107.49625187406298"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="darkColor">
+            <color red="0.29019607843137257" green="0.29019607843137257" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -16,9 +16,19 @@
 		773D65162183D0F100229F7F /* UIFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 773D650F2183D0F100229F7F /* UIFramework.framework */; };
 		773D65172183D0F100229F7F /* UIFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 773D650F2183D0F100229F7F /* UIFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		773D651D2183D26800229F7F /* NibDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773D651C2183D26800229F7F /* NibDesignable.swift */; };
+		77C1AA432186780300434938 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77C1AA422186780300434938 /* View.xib */; };
 		77E59FAE218635BD0097E1C6 /* ComponentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E59FAD218635BD0097E1C6 /* ComponentTableViewCell.swift */; };
+		77E59FB92186377B0097E1C6 /* ILPaymentMethodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E59FB82186377B0097E1C6 /* ILPaymentMethodView.swift */; };
+		77E59FBB218637870097E1C6 /* ILPaymentMethodView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77E59FBA218637870097E1C6 /* ILPaymentMethodView.xib */; };
 		77E59FBD218637FA0097E1C6 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E59FBC218637FA0097E1C6 /* ShadowView.swift */; };
 		77E59FBF2186387E0097E1C6 /* ILAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77E59FBE2186387E0097E1C6 /* ILAssets.xcassets */; };
+		77E59FC221863E750097E1C6 /* PaymentMethodStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E59FC121863E750097E1C6 /* PaymentMethodStyle.swift */; };
+		77E59FC4218641520097E1C6 /* ILTitleCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E59FC3218641520097E1C6 /* ILTitleCardView.swift */; };
+		77E59FC62186415F0097E1C6 /* ILTitleCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77E59FC52186415F0097E1C6 /* ILTitleCardView.xib */; };
+		77E59FC821866F9B0097E1C6 /* ILHorizontalPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E59FC721866F9B0097E1C6 /* ILHorizontalPickerView.swift */; };
+		77E59FCA21866FAA0097E1C6 /* ILHorizontalPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77E59FC921866FAA0097E1C6 /* ILHorizontalPickerView.xib */; };
+		77E59FCC218672870097E1C6 /* ILOptionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E59FCB218672870097E1C6 /* ILOptionButton.swift */; };
+		77E59FCE218672970097E1C6 /* ILOptionButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77E59FCD218672970097E1C6 /* ILOptionButton.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,9 +67,19 @@
 		773D65112183D0F100229F7F /* UIFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIFramework.h; sourceTree = "<group>"; };
 		773D65122183D0F100229F7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		773D651C2183D26800229F7F /* NibDesignable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibDesignable.swift; sourceTree = "<group>"; };
+		77C1AA422186780300434938 /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		77E59FAD218635BD0097E1C6 /* ComponentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentTableViewCell.swift; sourceTree = "<group>"; };
+		77E59FB82186377B0097E1C6 /* ILPaymentMethodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ILPaymentMethodView.swift; sourceTree = "<group>"; };
+		77E59FBA218637870097E1C6 /* ILPaymentMethodView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ILPaymentMethodView.xib; sourceTree = "<group>"; };
 		77E59FBC218637FA0097E1C6 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		77E59FBE2186387E0097E1C6 /* ILAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ILAssets.xcassets; sourceTree = "<group>"; };
+		77E59FC121863E750097E1C6 /* PaymentMethodStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodStyle.swift; sourceTree = "<group>"; };
+		77E59FC3218641520097E1C6 /* ILTitleCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ILTitleCardView.swift; sourceTree = "<group>"; };
+		77E59FC52186415F0097E1C6 /* ILTitleCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ILTitleCardView.xib; sourceTree = "<group>"; };
+		77E59FC721866F9B0097E1C6 /* ILHorizontalPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ILHorizontalPickerView.swift; sourceTree = "<group>"; };
+		77E59FC921866FAA0097E1C6 /* ILHorizontalPickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ILHorizontalPickerView.xib; sourceTree = "<group>"; };
+		77E59FCB218672870097E1C6 /* ILOptionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ILOptionButton.swift; sourceTree = "<group>"; };
+		77E59FCD218672970097E1C6 /* ILOptionButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ILOptionButton.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +124,7 @@
 			children = (
 				773D64F82183B5B900229F7F /* AppDelegate.swift */,
 				773D64FA2183B5B900229F7F /* ViewController.swift */,
+				77C1AA422186780300434938 /* View.xib */,
 				773D64FC2183B5B900229F7F /* Main.storyboard */,
 				773D64FF2183B5BA00229F7F /* Assets.xcassets */,
 				773D65012183B5BA00229F7F /* LaunchScreen.storyboard */,
@@ -115,6 +136,8 @@
 		773D65102183D0F100229F7F /* UIFramework */ = {
 			isa = PBXGroup;
 			children = (
+				77E59FC021863E5C0097E1C6 /* Styles */,
+				77E59FB72186371C0097E1C6 /* Views */,
 				773D65112183D0F100229F7F /* UIFramework.h */,
 				773D65122183D0F100229F7F /* Info.plist */,
 				77E59FBE2186387E0097E1C6 /* ILAssets.xcassets */,
@@ -131,6 +154,29 @@
 				77E59FBC218637FA0097E1C6 /* ShadowView.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		77E59FB72186371C0097E1C6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				77E59FB82186377B0097E1C6 /* ILPaymentMethodView.swift */,
+				77E59FBA218637870097E1C6 /* ILPaymentMethodView.xib */,
+				77E59FC3218641520097E1C6 /* ILTitleCardView.swift */,
+				77E59FC52186415F0097E1C6 /* ILTitleCardView.xib */,
+				77E59FC721866F9B0097E1C6 /* ILHorizontalPickerView.swift */,
+				77E59FC921866FAA0097E1C6 /* ILHorizontalPickerView.xib */,
+				77E59FCB218672870097E1C6 /* ILOptionButton.swift */,
+				77E59FCD218672970097E1C6 /* ILOptionButton.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		77E59FC021863E5C0097E1C6 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				77E59FC121863E750097E1C6 /* PaymentMethodStyle.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77C1AA432186780300434938 /* View.xib in Resources */,
 				773D65032183B5BA00229F7F /* LaunchScreen.storyboard in Resources */,
 				773D65002183B5BA00229F7F /* Assets.xcassets in Resources */,
 				773D64FE2183B5B900229F7F /* Main.storyboard in Resources */,
@@ -238,6 +285,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				77E59FBF2186387E0097E1C6 /* ILAssets.xcassets in Resources */,
+				77E59FC62186415F0097E1C6 /* ILTitleCardView.xib in Resources */,
+				77E59FBB218637870097E1C6 /* ILPaymentMethodView.xib in Resources */,
+				77E59FCE218672970097E1C6 /* ILOptionButton.xib in Resources */,
+				77E59FCA21866FAA0097E1C6 /* ILHorizontalPickerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +308,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77E59FC221863E750097E1C6 /* PaymentMethodStyle.swift in Sources */,
+				77E59FCC218672870097E1C6 /* ILOptionButton.swift in Sources */,
 				77E59FBD218637FA0097E1C6 /* ShadowView.swift in Sources */,
+				77E59FC4218641520097E1C6 /* ILTitleCardView.swift in Sources */,
+				77E59FC821866F9B0097E1C6 /* ILHorizontalPickerView.swift in Sources */,
 				773D651D2183D26800229F7F /* NibDesignable.swift in Sources */,
+				77E59FB92186377B0097E1C6 /* ILPaymentMethodView.swift in Sources */,
 				77E59FAE218635BD0097E1C6 /* ComponentTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

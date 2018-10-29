@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ILTitleCardView" customModule="UIFramework" customModuleProvider="target">
+            <connections>
+                <outlet property="titleLabel" destination="md0-tc-Mnx" id="gQA-Jh-eaW"/>
+                <outlet property="valueLabel" destination="3BN-Rw-gOs" id="XAH-4J-B7m"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="lPR-FP-wsi" customClass="ShadowView" customModule="UIFramework" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="413" height="74"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="md0-tc-Mnx">
+                    <rect key="frame" x="15" y="10" width="26" height="11"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="10"/>
+                    <color key="textColor" name="grayColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QF5-H8-Ohq">
+                    <rect key="frame" x="373" y="23" width="28" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="28" id="plo-l0-afI"/>
+                        <constraint firstAttribute="height" constant="28" id="yrh-qS-IXk"/>
+                    </constraints>
+                    <state key="normal" image="icons8Left4"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1,000.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3BN-Rw-gOs">
+                    <rect key="frame" x="15" y="29" width="134" height="36"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
+                    <color key="textColor" name="darkColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="md0-tc-Mnx" firstAttribute="top" secondItem="cdG-Lu-GPN" secondAttribute="top" constant="10" id="44g-o9-iAL"/>
+                <constraint firstItem="md0-tc-Mnx" firstAttribute="leading" secondItem="cdG-Lu-GPN" secondAttribute="leading" constant="15" id="JY0-DD-4bH"/>
+                <constraint firstItem="3BN-Rw-gOs" firstAttribute="centerY" secondItem="lPR-FP-wsi" secondAttribute="centerY" constant="10" id="YGI-2r-ftV"/>
+                <constraint firstItem="cdG-Lu-GPN" firstAttribute="trailing" secondItem="QF5-H8-Ohq" secondAttribute="trailing" constant="12" id="dAs-yO-dDT"/>
+                <constraint firstItem="3BN-Rw-gOs" firstAttribute="top" relation="greaterThanOrEqual" secondItem="md0-tc-Mnx" secondAttribute="bottom" constant="8" id="rqs-YM-BGu"/>
+                <constraint firstItem="QF5-H8-Ohq" firstAttribute="centerY" secondItem="lPR-FP-wsi" secondAttribute="centerY" id="xp5-D8-168"/>
+                <constraint firstItem="3BN-Rw-gOs" firstAttribute="leading" secondItem="cdG-Lu-GPN" secondAttribute="leading" constant="15" id="y7K-tg-pBc"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="cdG-Lu-GPN"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                    <real key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="46" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icons8Left4" width="12" height="20"/>
+        <namedColor name="darkColor">
+            <color red="0.29019607843137257" green="0.29019607843137257" blue="0.29019607843137257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="grayColor">
+            <color red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
